@@ -58,7 +58,7 @@ class booleanToStringTest extends PHPUnit_Framework_TestCase
     {
         $expected = '<p id="formName-booleanName" class="input-boolean required" data-errorMessage="Please check this box if you want to proceed">' .
             '<label>' .
-                '<input type="checkbox" name="booleanName" required="required" value="true">' .
+                '<input type="checkbox" name="booleanName" required="required" aria-required="true" value="true">' .
                 '<span class="label">booleanName <em>*</em></span>' .
             '</label>' .
         '</p>' . "\n";
@@ -76,7 +76,7 @@ class booleanToStringTest extends PHPUnit_Framework_TestCase
     {
         $expected = '<p id="formName-booleanName" class="input-boolean required" title="ti&quot;&gt;tle" data-errorMessage="er&quot;&gt;rorMessage">' .
             '<label>' .
-                '<input type="checkbox" name="booleanName" required="required" value="true">' .
+                '<input type="checkbox" name="booleanName" required="required" aria-required="true" value="true">' .
                 '<span class="label">la&quot;&gt;bel <em>ma&quot;&gt;rker</em></span>' .
             '</label>' .
         '</p>' . "\n";

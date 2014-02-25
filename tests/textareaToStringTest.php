@@ -59,7 +59,7 @@ class textareaToStringTest extends PHPUnit_Framework_TestCase
         $expected = '<p id="formName-textareaName" class="input-textarea required" data-errorMessage="Please enter valid data" data-textarea-options="{&quot;autogrow&quot;:false}">' .
             '<label>' .
                 '<span class="label">textareaName <em>*</em></span>' .
-                '<textarea name="textareaName" required="required"></textarea>' .
+                '<textarea name="textareaName" required="required" aria-required="true"></textarea>' .
             '</label>' .
         '</p>' . "\n";
 

@@ -490,7 +490,7 @@ abstract class input extends element
     {
         $attributes = '';
 
-        if ($this->required)    $attributes .= ' required="required"';
+        if ($this->required)    $attributes .= ' required="required" aria-required="true"';
         if ($this->disabled)    $attributes .= ' disabled="disabled"';
         if ($this->autofocus)   $attributes .= ' autofocus="autofocus"';
 
@@ -557,7 +557,7 @@ abstract class input extends element
             && $this->value !== null
             && $this->errorMessage !== ""
         ) {
-            $errorMessage = "<span class=\"errorMessage\">" . $this->htmlEscape($this->errorMessage) . "</span>";
+            $errorMessage = "<span role=\"alert\" class=\"errorMessage\">" . $this->htmlEscape($this->errorMessage) . "</span>";
         } else {
             $errorMessage = "";
         }

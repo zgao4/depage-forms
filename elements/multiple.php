@@ -209,7 +209,7 @@ class multiple extends abstracts\input
         $attributes = '';
 
         // HTML5 validator hack
-        if ($this->required && $this->skin === 'select') $attributes .= ' required="required"';
+        if ($this->required && $this->skin === 'select') $attributes .= ' required="required" aria-required="true"';
         if ($this->autofocus)                            $attributes .= ' autofocus="autofocus"';
         return $attributes;
     }

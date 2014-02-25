@@ -59,7 +59,7 @@ class textToStringTest extends PHPUnit_Framework_TestCase
         $expected = '<p id="formName-textName" class="input-text required" data-errorMessage="Please enter valid data">' .
             '<label>' .
                 '<span class="label">textName <em>*</em></span>' .
-                '<input name="textName" type="text" required="required" value="">' .
+                '<input name="textName" type="text" required="required" aria-required="true" value="">' .
             '</label>' .
         '</p>' . "\n";
 
@@ -97,7 +97,7 @@ class textToStringTest extends PHPUnit_Framework_TestCase
                 $expected = '<p id="formName-textName" class="input-text required" data-errorMessage="Please enter valid data">' .
                     '<label>' .
                         '<span class="label">textName <em>*</em></span>' .
-                        '<input name="textName" type="text" required="required"' . $attribute . ' value="">' .
+                        '<input name="textName" type="text" required="required" aria-required="true"' . $attribute . ' value="">' .
                     '</label>' .
                 '</p>' . "\n";
 
@@ -174,7 +174,7 @@ class textToStringTest extends PHPUnit_Framework_TestCase
         $expected = '<p id="formName-textName" class="input-text required" title="ti&quot;&gt;tle" data-errorMessage="er&quot;&gt;rorMessage">' .
             '<label>' .
                 '<span class="label">la&quot;&gt;bel <em>ma&quot;&gt;rker</em></span>' .
-                '<input name="textName" type="text" required="required" value="val&quot;&gt;ue&lt;&#039;">' .
+                '<input name="textName" type="text" required="required" aria-required="true" value="val&quot;&gt;ue&lt;&#039;">' .
             '</label>' .
         '</p>' . "\n";
 

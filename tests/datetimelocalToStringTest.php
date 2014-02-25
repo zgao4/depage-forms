@@ -59,7 +59,7 @@ class datetimelocalToStringTest extends PHPUnit_Framework_TestCase
         $expected = '<p id="formName-datetimelocalName" class="input-datetimelocal required" data-errorMessage="Please enter valid data">' .
             '<label>' .
                 '<span class="label">datetimelocalName <em>*</em></span>' .
-                '<input name="datetimelocalName" type="datetime-local" required="required" value="">' .
+                '<input name="datetimelocalName" type="datetime-local" required="required" aria-required="true" value="">' .
             '</label>' .
         '</p>' . "\n";
 
@@ -77,7 +77,7 @@ class datetimelocalToStringTest extends PHPUnit_Framework_TestCase
         $expected = '<p id="formName-datetimelocalName" class="input-datetimelocal required" title="ti&quot;&gt;tle" data-errorMessage="er&quot;&gt;rorMessage">' .
             '<label>' .
                 '<span class="label">la&quot;&gt;bel <em>ma&quot;&gt;rker</em></span>' .
-                '<input name="datetimelocalName" type="datetime-local" required="required" value="">' .
+                '<input name="datetimelocalName" type="datetime-local" required="required" aria-required="true" value="">' .
             '</label>' .
         '</p>' . "\n";
 

@@ -112,14 +112,15 @@ class inputTest extends PHPUnit_Framework_TestCase
      **/
     public function testHtmlErrorMessage()
     {
-        // valid input element => epmty error message
+        // valid input element => empty error message
         $this->assertEquals($this->input->htmlErrorMessage(), '');
 
         // invalid input element
         $this->input->setValid(false);
+
         // set value (null by default)
         $this->input->setValue('');
-        $this->assertEquals($this->input->htmlErrorMessage(), '<span class="errorMessage">Please enter valid data</span>');
+        $this->assertEquals($this->input->htmlErrorMessage(), '<span role="alert" class="errorMessage">Please enter valid data</span>');
     }
     // }}}
 

@@ -74,7 +74,7 @@ class singleToStringTest extends PHPUnit_Framework_TestCase
         $expected = '<p id="formName-singleName" class="input-single required skin-select" data-errorMessage="Please enter valid data">' .
             '<label>' .
                 '<span class="label">singleName <em>*</em></span>' .
-                '<select name="singleName" required="required"></select>' .
+                '<select name="singleName" required="required" aria-required="true"></select>' .
             '</label>' .
         '</p>' . "\n";
 
@@ -296,7 +296,7 @@ class singleToStringTest extends PHPUnit_Framework_TestCase
         $expected = '<p id="formName-singleName" class="input-single required skin-select" title="ti&quot;&gt;tle" data-errorMessage="er&quot;&gt;rorMessage">' .
             '<label>' .
                 '<span class="label">la&quot;&gt;bel <em>ma&quot;&gt;rker</em></span>' .
-                '<select name="singleName" required="required"></select>' .
+                '<select name="singleName" required="required" aria-required="true"></select>' .
             '</label>' .
         '</p>' . "\n";
 

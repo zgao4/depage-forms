@@ -86,25 +86,25 @@ class creditcardToStringTest extends PHPUnit_Framework_TestCase
             '<p id="formName-creditcardName_card_number" class="input-text required" data-errorMessage="Please enter valid data">' .
                 '<label>' .
                     '<span class="label">Creditcard Number <em>*</em></span>' .
-                    '<input name="creditcardName_card_number" type="text" required="required" pattern="^(?:\d[ -]*?){13,16}$" value="">' .
+                    '<input name="creditcardName_card_number" type="text" required="required" aria-required="true" pattern="^(?:\d[ -]*?){13,16}$" value="">' .
                 '</label>' .
             '</p>' . "\n" .
             '<p id="formName-creditcardName_card_numbercheck" class="input-text required" data-errorMessage="Please enter valid data">' .
                 '<label>' .
                     '<span class="label">CVV/CVC <em>*</em></span>' .
-                    '<input name="creditcardName_card_numbercheck" type="text" required="required" pattern="^\d{3,4}$" value="">' .
+                    '<input name="creditcardName_card_numbercheck" type="text" required="required" aria-required="true" pattern="^\d{3,4}$" value="">' .
                 '</label>' .
             '</p>' . "\n" .
             '<p id="formName-creditcardName_card_expirydate" class="input-text required" data-errorMessage="Please enter valid data">' .
                 '<label>' .
                     '<span class="label">Expiration Date MM/YY <em>*</em></span>' .
-                    '<input name="creditcardName_card_expirydate" type="text" required="required" pattern="^\d{2}\/\d{2}$" value="">' .
+                    '<input name="creditcardName_card_expirydate" type="text" required="required" aria-required="true" pattern="^\d{2}\/\d{2}$" value="">' .
                 '</label>' .
             '</p>' . "\n" .
             '<p id="formName-creditcardName_card_owner" class="input-text required" data-errorMessage="Please enter valid data">' .
                 '<label>' .
                     '<span class="label">Card Owner <em>*</em></span>' .
-                    '<input name="creditcardName_card_owner" type="text" required="required" value="">' .
+                    '<input name="creditcardName_card_owner" type="text" required="required" aria-required="true" value="">' .
                 '</label>' .
             '</p>' . "\n" .
         '</fieldset>' . "\n";
